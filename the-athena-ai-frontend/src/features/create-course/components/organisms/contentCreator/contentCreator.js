@@ -80,7 +80,7 @@ export default function ContentCreator() {
     });
   };
   //pedro 5 opciones
-  const handleAddMultipleAnswerWithSelected = () => {
+   const handleAddMultipleAnswerWithSelected = () => {
   const selText = window.getSelection().toString();
   const selElem = document.activeElement;
   const idx = selElem?.dataset?.index;
@@ -89,7 +89,7 @@ export default function ContentCreator() {
 
   addExerciseAt(idx, {
     numberOfExercises: 3,
-    type: "MULTIPLE_ANSWER", // Asegúrate que este tipo exista en tu lógica
+    type: "MULTIPLE_CHOICE",
     difficulty: "MEDIUM",
     text: selText,
     numberOfOptions: 5,
